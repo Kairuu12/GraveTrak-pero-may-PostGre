@@ -1,0 +1,52 @@
+.cpdo-analytics { margin-bottom: 24px; }
+.cpdo-intro { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; margin-bottom: 18px; }
+.cpdo-intro h2 { margin: 4px 0 3px; font-size: clamp(19px, 2vw, 25px); color: var(--text-primary); }
+.cpdo-intro p, .cpdo-panel header p { margin: 0; color: var(--text-secondary); font-size: 12px; }
+.cpdo-intro-actions { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; justify-content: flex-end; }
+.cpdo-cemetery-switcher { display: inline-flex; gap: 4px; padding: 4px; background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; }
+.cpdo-cemetery-switcher button { border: 0; border-radius: 7px; padding: 8px 12px; background: transparent; color: var(--text-secondary); font: inherit; font-size: 11px; font-weight: 800; cursor: pointer; }
+.cpdo-cemetery-switcher button.active { background: #1687c9; color: #fff; }
+.cpdo-cemetery-switcher button:hover:not(.active) { background: rgba(22,135,201,.1); color: var(--accent); }
+.cpdo-eyebrow { color: var(--accent); font-size: 10px; font-weight: 800; letter-spacing: .12em; }
+.cpdo-live { flex: 0 0 auto; padding: 7px 11px; color: var(--accent); background: rgba(22,135,201,.1); border: 1px solid rgba(22,135,201,.2); border-radius: 999px; font-size: 11px; font-weight: 700; }
+.cpdo-kpis { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; margin-bottom: 16px; }
+.cpdo-kpis > div { min-width: 0; padding: 17px 19px; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); }
+.cpdo-kpis span, .cpdo-kpis small { display: block; color: var(--text-secondary); font-size: 11px; }
+.cpdo-kpis span { text-transform: uppercase; letter-spacing: .06em; font-weight: 700; }
+.cpdo-kpis strong { display: block; margin: 6px 0 3px; color: var(--text-primary); font-size: clamp(25px, 2.5vw, 34px); line-height: 1; }
+.cpdo-kpis .cpdo-kpi-highlight { border-color: rgba(22,135,201,.45); background: var(--bg-card); }
+.cpdo-grid { display: grid; grid-template-columns: minmax(0, 1.65fr) minmax(280px, 1fr); gap: 16px; }
+.cpdo-panel { min-width: 0; padding: 20px; }
+.cpdo-panel header { margin-bottom: 18px; }
+.cpdo-panel h3 { margin: 3px 0 4px; color: var(--text-primary); font-size: 17px; }
+.cpdo-compare { grid-column: 1; }.cpdo-zone-panel { grid-column: 2; }.cpdo-ground-panel { grid-column: 1; }.cpdo-niche-panel { grid-column: 2; }.cpdo-ranked { grid-column: 1 / -1; }
+.cpdo-cemeteries { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.cpdo-cemetery { min-width: 0; padding: 16px; border: 1px solid var(--border); border-radius: 12px; background: var(--bg-surface); }
+.cpdo-cemetery h4 { margin: 0 0 16px; font-size: 14px; }
+.cpdo-cemetery .cpdo-map-count { margin: -11px 0 15px; color: var(--text-secondary); font-size: 10px; }
+.cpdo-donut-pair { display: flex; justify-content: space-around; gap: 12px; text-align: center; }
+.cpdo-donut-pair > div { min-width: 0; display: flex; flex-direction: column; align-items: center; }
+.cpdo-donut-pair b { margin-top: 9px; font-size: 11px; }.cpdo-donut-pair span, .cpdo-donut-pair small { font-size: 10px; color: var(--text-secondary); }
+.cpdo-donut, .cpdo-zone-donut { display: grid; place-items: center; aspect-ratio: 1; width: 98px; border-radius: 50%; background: var(--fill); animation: cpdo-reveal .8s ease-out both; }
+.cpdo-donut > div, .cpdo-zone-donut > div { display: flex; flex-direction: column; align-items: center; justify-content: center; width: 70%; height: 70%; border-radius: 50%; background: var(--bg-card); }
+.cpdo-donut strong, .cpdo-zone-donut strong { font-size: 22px; line-height: 1; }.cpdo-donut small, .cpdo-zone-donut small { font-size: 10px; color: var(--text-secondary); }
+.cpdo-legend { display: flex; flex-wrap: wrap; gap: 8px 14px; margin-top: 16px; color: var(--text-secondary); font-size: 10px; text-transform: capitalize; }
+.cpdo-legend span { display: inline-flex; align-items: center; gap: 5px; }.cpdo-legend i, .cpdo-zone-key i { display: inline-block; width: 9px; height: 9px; border-radius: 3px; }
+.cpdo-zone-donut { width: 150px; margin: 8px auto 16px; }.cpdo-zone-donut strong { font-size: 33px; }
+.cpdo-zone-key { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }.cpdo-zone-key > div { display: flex; align-items: center; gap: 7px; text-transform: capitalize; font-size: 12px; }.cpdo-zone-key b { margin-left: auto; }
+.cpdo-ground-chart { display: grid; gap: 13px; max-height: 330px; overflow: auto; padding-right: 6px; }
+.cpdo-ground-row { display: grid; grid-template-columns: minmax(90px, 120px) minmax(0, 1fr) 30px; gap: 9px; align-items: center; }
+.cpdo-row-name { min-width: 0; }.cpdo-row-name b, .cpdo-row-name small { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }.cpdo-row-name b { font-size: 11px; }.cpdo-row-name small { color: var(--text-muted); font-size: 10px; }
+.cpdo-ground-area { height: 15px; background: var(--border); border-radius: 8px; }.cpdo-ground-bar { display: flex; height: 100%; min-width: 2px; overflow: hidden; border-radius: inherit; animation: cpdo-grow .75s ease-out both; transition: width .7s ease; transform-origin: left; }.cpdo-ground-bar span { height: 100%; }.cpdo-row-count { text-align: right; font-size: 11px; }
+.cpdo-niche-chart { display: flex; align-items: end; gap: 14px; min-height: 260px; max-width: 100%; overflow-x: auto; padding: 20px 4px 0; border-bottom: 1px solid var(--border); }
+.cpdo-niche-column { display: flex; flex: 1 0 54px; max-width: 90px; height: 240px; flex-direction: column; align-items: center; justify-content: flex-end; min-width: 54px; text-align: center; }.cpdo-niche-column > b { font-size: 11px; margin-bottom: 5px; }
+.cpdo-niche-bar { display: flex; flex-direction: column; justify-content: flex-end; width: 32px; min-height: 8px; overflow: hidden; border-radius: 5px 5px 0 0; animation: cpdo-grow-up .8s ease-out both; transition: height .7s ease; transform-origin: bottom; }.cpdo-niche-bar span { display: block; width: 100%; }
+.cpdo-niche-name { width: 100%; height: 37px; padding-top: 5px; }.cpdo-niche-name strong, .cpdo-niche-name small { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }.cpdo-niche-name strong { font-size: 10px; }.cpdo-niche-name small { color: var(--text-muted); font-size: 9px; }
+.cpdo-rank-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px 22px; }.cpdo-rank-list > div { display: flex; align-items: center; gap: 12px; min-width: 0; padding: 10px 0; border-bottom: 1px solid var(--border); }.cpdo-rank-list > div > span { color: var(--accent); font-size: 16px; font-weight: 800; }.cpdo-rank-list > div > div { min-width: 0; flex: 1; }.cpdo-rank-list b, .cpdo-rank-list small { display: block; }.cpdo-rank-list b { font-size: 12px; }.cpdo-rank-list small { color: var(--text-secondary); font-size: 10px; }.cpdo-rank-list strong { color: var(--accent); font-size: 17px; }
+.cpdo-empty, .cpdo-method { color: var(--text-muted); font-size: 11px; }.cpdo-method { margin: 12px 2px 0; }
+.cpdo-utility-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; align-items: start; }.cpdo-utility-grid > .planning-zoning-column { min-width: 0; grid-column: auto; grid-template-columns: 1fr; }.cpdo-utility-grid > .planning-activity-card { min-width: 0; grid-column: auto; }
+@keyframes cpdo-grow { from { transform: scaleX(0); } to { transform: scaleX(1); } }@keyframes cpdo-grow-up { from { transform: scaleY(0); } to { transform: scaleY(1); } }@keyframes cpdo-reveal { from { opacity: 0; transform: scale(.9); } to { opacity: 1; transform: scale(1); } }
+@media (max-width: 1050px) { .cpdo-grid { grid-template-columns: 1fr; }.cpdo-compare, .cpdo-zone-panel, .cpdo-ground-panel, .cpdo-niche-panel, .cpdo-ranked { grid-column: 1; }.cpdo-kpis { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 700px) { .cpdo-utility-grid { grid-template-columns: 1fr; }.cpdo-cemeteries { grid-template-columns: 1fr; }.cpdo-rank-list { grid-template-columns: 1fr; } }
+@media (max-width: 480px) { .cpdo-kpis { grid-template-columns: 1fr 1fr; }.cpdo-kpis > div { padding: 13px; }.cpdo-intro { flex-direction: column; }.cpdo-intro-actions { justify-content: flex-start; width: 100%; }.cpdo-donut { width: 80px; }.cpdo-panel { padding: 16px; } }
+@media (prefers-reduced-motion: reduce) { .cpdo-donut, .cpdo-zone-donut, .cpdo-ground-bar, .cpdo-niche-bar { animation: none; transition: none; } }

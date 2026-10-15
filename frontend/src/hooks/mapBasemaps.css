@@ -1,0 +1,49 @@
+.leaflet-container .leaflet-basemap-control {
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  float: none;
+  margin: 0;
+  z-index: 1002;
+  max-width: calc(100% - 32px);
+  color: var(--text-primary, #172033);
+}
+
+.leaflet-basemap-choices {
+  display: flex;
+  padding: 4px;
+  border: 1px solid var(--border, #dbe4ee);
+  border-radius: 12px;
+  background: var(--bg-surface, #fff);
+  box-shadow: 0 3px 12px rgba(15, 23, 42, .15);
+}
+
+.leaflet-basemap-button {
+  min-height: 36px;
+  padding: 6px 12px;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.leaflet-basemap-button[aria-pressed="true"] { background: var(--accent, #1687c9); color: #fff; }
+.leaflet-basemap-button:focus-visible { outline: 2px solid var(--accent, #1687c9); outline-offset: 2px; }
+.leaflet-basemap-status { margin-top: 4px; padding: 6px 10px; border-radius: 8px; background: var(--bg-surface, #fff); font-size: 11px; }
+.leaflet-basemap-status[hidden] { display: none; }
+
+/* Preserve natural imagery colors instead of the street-map theme filter. */
+.gravetrak-satellite-tiles .leaflet-tile { filter: none !important; }
+.leaflet-container .leaflet-control-attribution { display: block !important; max-width: min(600px, 85vw); }
+#screen-public .leaflet-basemap-control { top: 84px; }
+
+@media (max-width: 768px) {
+  #screen-public .leaflet-basemap-control { top: calc(var(--map-toolbar-top, 16px) + 120px); }
+  #panel-planning .leaflet-basemap-control { top: 180px; }
+  .leaflet-basemap-button { min-height: 44px; }
+}
