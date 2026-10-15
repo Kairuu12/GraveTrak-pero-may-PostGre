@@ -11,7 +11,9 @@ PHILSMS_SENDER_ID = os.environ.get('PHILSMS_SENDER_ID', '')
 PHILSMS_BASE_URL = os.environ.get('PHILSMS_BASE_URL', 'https://dashboard.philsms.com/api/v3').rstrip('/')
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'change-me-to-a-secure-key')
 DEBUG = os.environ.get('DJANGO_DEBUG', '0') == '1'
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['127.0.0.1', 
+                 'localhost',
+                 'gravetrak-backend.onrender.com']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
